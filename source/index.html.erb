@@ -63,39 +63,20 @@ title: Le Wagon Middleman boilerplate
       <div class="container">
         <h2 class="text-center">Your next trip</h2>
         <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-              <div class="card-category">Paris</div>
-              <div class="card-description">
-                <h2>Seb's home</h2>
-                <p>Merveilleux!</p>
+
+          <% data.flats.each do |owner, flat| %>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
+                <div class="card-category"><%= flat.city %></div>
+                <div class="card-description">
+                  <h2><%= flat.name %>'s home</h2>
+                  <p><%= flat.summary %>!</p>
+                </div>
+                  <%= image_tag flat.owner_picture, class: "card-user avatar avatr-large" %>
               </div>
-                <img src="images/seb.jpg" alt="" class="card-user avatar avatr-large">
-                <a href="" class="card-link"></a>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-              <div class="card-category">Bruxelles</div>
-              <div class="card-description">
-                <h2>Chez Anne</h2>
-                <p>Super</p>
-              </div>
-                <img src="images/anne.jpg" alt="" class="card-user avatar avatr-large">
-                <a href="" class="card-link"></a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-              <div class="card-category">Londres</div>
-              <div class="card-description">
-                <h2>Chez Romain</h2>
-                <p>Genial</p>
-              </div>
-                <img src="images/romain.jpeg" alt="" class="card-user avatar avatr-large">
-                <a href="" class="card-link"></a>
-            </div>
-          </div>
+          <% end %>
+
         </div>
       </div>
     </div>

@@ -1,0 +1,20 @@
+seb:
+  name: Sebastien
+  city: Paris
+  summary: Wonderful
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+
+romain:
+  name: Romain
+  city: Londres
+  summary: Merveilleux
+  picture: card-london.jpeg
+  owner_picture: romain.jpeg
+
+anne:
+  name: Anne
+  city: Bruxelles
+  summary: Genial
+  picture: card-brussels.jpeg
+  owner_picture: anne.jpg
