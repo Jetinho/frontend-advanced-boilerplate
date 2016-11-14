@@ -1,20 +1,23 @@
 seb:
-  name: Sebastien
-  city: Paris
-  summary: Wonderful
+  owner_name: Sebastien
+  city: Paris, France
+  summary: Wonderful studio
   picture: card-paris.jpg
   owner_picture: seb.jpg
+  wifi: true
 
 romain:
-  name: Romain
-  city: Londres
-  summary: Merveilleux
+  owner_name: Romain
+  city: Londres, UK
+  summary: Beautiful house
   picture: card-london.jpeg
   owner_picture: romain.jpeg
+  wifi: false
 
 anne:
-  name: Anne
-  city: Bruxelles
-  summary: Genial
+  owner_name: Anne
+  city: Bruxelles, Belgium
+  summary: Awesome rooftop
   picture: card-brussels.jpeg
   owner_picture: anne.jpg
+  wifi: true

@@ -3,7 +3,15 @@
   <h1>L'équipe :</h1>
   <ul class="list-inline">
     <% members.each do |m|%>
-      <li><h3><%= m%></h3></li>
+      <li>
+        <%random = rand(0..20) %>
+        <%= image_tag "http://i.pravatar.cc/100?img=#{random}", class: "avatar-large img-circle" %><br>
+      <h3>
+      <%= m%>
+      </h3>
+      </li>
     <% end %>
   </ul>
 </div>
+
+
