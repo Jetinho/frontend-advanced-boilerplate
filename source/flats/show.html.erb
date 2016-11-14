@@ -1,0 +1,14 @@
+<%flat = data.flats[owner] %>
+<!--<%= image_tag flat.owner_picture, class: "img-circle" %>
+<p><%= flat.name %></p>
+<h1><%= flat.summary %></h1>
+<p><%= flat.city %></p> -->
+
+<div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
+  <div class="card-category"><%= flat.city %></div>
+  <div class="card-description">
+    <h2><%= flat.name %>'s home</h2>
+    <p><%= flat.summary %>!</p>
+  </div>
+    <%= image_tag flat.owner_picture, class: "card-user avatar avatr-large" %>
+</div>
